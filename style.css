@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid black;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-actions button {
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size:98px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.sketch-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.sketch-button {
+    box-shadow: 3px 3px 0px black, -3px -3px 0px black, 3px -3px 0px black, -3px 3px 0px black;
+}
+
+.sketch-button:hover {
+    background: black;
+    color: white;
+}
+
+.start {
+    display: flex;
+    justify-content: space-around;
+}
+
+.book-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-card {
+    background: white;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: 3px 3px 0px black, -3px -3px 0px black, 3px -3px 0px black, -3px 3px 0px black;
+}
+
+.book-cover {
+    width: 100%;
+    height: 300px; 
+    background: #e5e5e5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-info {
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.genre-tag {
+    display: inline-block;
+    background: white;
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 0px black;
+}
+
+.book-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.book-info a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Sorting Buttons */
+.sort-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sort-container button {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.sort-container button:hover {
+    background: black;
+    color: white;
+}
+

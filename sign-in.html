@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - BookNotes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: white;
+            border-bottom: 2px solid black;
+        }
+
+        .logo {
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px 15px;
+            border: 2px solid black;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-actions button {
+            font-size: 16px;
+            padding: 8px 15px;
+            border: 2px solid black;
+            background: transparent;
+            cursor: pointer;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .sign-in-container {
+            max-width: 400px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .sign-in-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            background: black;
+            color: white;
+            width: 100%;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .sign-in-button:hover {
+            background: white;
+            color: black;
+        }
+        .signup-link {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .signup-link a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span></span> <strong>📓BookNotes</strong>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recomend.html">Recommandations</a></li>
+            <li><a href="about-me.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="button">New Entry</button>
+            <a href="sign-in.html"><button class="button">Sign In</button></a>
+        </div>
+    </nav>
+
+    <div class="sign-in-container">
+        <h2>Sign In</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="sign-in-button">Sign In</button>
+        </form>
+        <p class="signup-link">New here? <a href="create-account.html">Create an account</a></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 BookNotes. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

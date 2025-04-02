@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-books.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span></span> <strong>📓BookNotes</strong>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recomend.html">Recommandations</a></li>
+            <li><a href="about-me.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="button">New Entry</button>
+            <a href="sign-in.html"><button class="button">Sign In</button></a>
+        </div>
+        <div class="nav-actions">
+            <button class="button">New Entry</button>
+            <a href="http://localhost:5173/signin"><button class="button">Sign In</button></a>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+    
+    <div class="book-container">
+        <img src="./images/hunger-games.jpg" class="book-cover">
+
+        <div class="book-details">
+            <h1>The Hunger Games</h1>
+            <p class="author">by Suzanne Collins</p>
+            <div class="rating">★ ★ ★ ★ ☆ <span>4.2</span></div>
+            <p class="description">
+                The Hunger Games is a young adult dystopian novel by Suzanne Collins. It is about a 16-year-old girl named Katniss Everdeen who volunteers to take her sister's place in the Hunger Games. 
+            </p>
+        </div>
+    </div>
+
+    <div class="review-section">
+        <h2>Review</h2>
+        <div class="review-box">
+            <p>
+                The Hunger Games by Suzanne Collins is a thrilling dystopian novel with intense action,
+                 deep social commentary, and compelling characters. Katniss Everdeen’s journey of survival and rebellion keeps 
+                 readers hooked, making it a must-read for fans of adventure and political intrigue.
+            </p>
+            <p class="review-author">- Harsh Srivastava</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 BookNotes. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeToggle = document.getElementById("theme-toggle");
+            const body = document.body;
+
+            if (localStorage.getItem("theme") === "dark") {
+                body.classList.add("dark-mode");
+                if (themeToggle) themeToggle.textContent = "☀️";
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener("click", () => {
+                    body.classList.toggle("dark-mode");
+                    if (body.classList.contains("dark-mode")) {
+                        localStorage.setItem("theme", "dark");
+                        themeToggle.textContent = "☀️";
+                    } else {
+                        localStorage.setItem("theme", "light");
+                        themeToggle.textContent = "🌙";
+                    }
+                });
+            }
+        });
+
+    </script>
+    
+    
+</body>
+</html>
